@@ -1,5 +1,8 @@
 source "http://rubygems.org"
 
 gem 'intercom'
-gem 'rspec'
+
+group :development, :test do
+  gem 'rspec'
+end
 
