@@ -14,7 +14,7 @@ module IntercomWrapper
   def self.send_request_to_path(request, app_id, app_api_key)
     request.execute(target_base_url(app_id, app_api_key))
   rescue Intercom::ServiceUnavailableError => e
-    if endpoints.length > 1
+    if Intercom::endpoints.length > 1
       retry_on_alternative_endpoint(request, app_id, app_api_key)
     else
       raise e
