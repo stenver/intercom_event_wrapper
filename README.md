@@ -1,3 +1,7 @@
+# DEPRECATED
+
+The newest intercom ruby gem is awesome. No need for this hack anymore
+
 # Intercom-ruby wrapper
 
 This is a simple wrapper to intercom that lets you create intercom events to multiple intercom apps from a single service. Unfortunately Intercom implementation of the ruby gem is a global singleton that demands ```app_id``` and ```app_api_key```. This means that you cannot use multiple intercom apps from within your application reliably.
